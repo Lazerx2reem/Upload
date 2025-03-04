@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #b47bd2;
+  padding: 0.5rem 1rem;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between; /* Logo on the left, links on the right */
+  align-items: center; /* Vertically center the items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%; /* Make sure ul takes up full height */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar .logo {
+  flex-grow: 1; /* This ensures the logo stays on the left */
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .nav-links li {
+  margin-left: 2rem;
+}
+
+
+.ManagerProfile h1{
+  text-align: left;
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  
+}
+
+.ManagerProfile h2{
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.AverageRatingValue {
+  line-height: 1.75rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem; /* Adjust as needed */
+  font-weight: bold;
+  color: #531dd1;
+}
+
+.average-rating-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4A4A4A;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
